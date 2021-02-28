@@ -10,11 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2021_02_20_130606) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "name"
     t.string "description"
+=======
+ActiveRecord::Schema.define(version: 2021_02_26_191217) do
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+>>>>>>> c98d32fb086b4d5744edc1de3bb74cda0403a523
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

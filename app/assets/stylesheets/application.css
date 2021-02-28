@@ -25,7 +25,6 @@ body{
 }
 
 html,body,main{
-    border: 1px solid black;
     height: 100%;
 }
 
@@ -77,6 +76,10 @@ header nav ul li a{
     color: #484848;
 }
 
+.menu-direita li a:hover{
+    color: #fff;
+}
+
 header nav ul li form .fg--search{
     width: 230px;
     position: relative;
@@ -105,6 +108,53 @@ header nav ul li form .fg--search button:hover{
 .topnav .icon {
     display: none;
 }
+
+/*Flex cards*/
+.menu-index{
+    width: 90%;
+    height: 40%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-task{
+    width: 30%;
+    min-width: 300px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.card-task hr{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.card-task h1{
+    text-align: center;
+    font-weight: bold;
+    color: #7BAC3B;
+    font-size: 2.2em;
+}
+
+.card-task h2{
+    font-size: 1.5em;
+}
+
+.card-task p{
+    font-size: 1em;
+}
+
+.card-task h2,.card-task p{
+    margin: 15px 10px 0 10px;
+}
+
+
+
   
   @media screen and (max-width: 1290px) {
     .topnav .menu-direita {display: none;}
